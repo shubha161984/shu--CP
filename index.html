@@ -1,0 +1,579 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PROJECT 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="app1.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+</head>
+<style>
+  .contain {
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  margin-top: 40px;
+}
+.over{
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 730px;
+  height: 500px;
+  margin-top: 60px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+    
+    #head{
+        padding-top: 150px;
+        text-shadow: 100px;
+        color: #fff;
+        height: 500px;
+      }
+      .image2{
+        position: relative;
+        text-align: center;
+        
+      }
+      .top-left {
+             position: absolute;
+             top: 700px;
+            left: 160px;
+            color: white;
+}
+
+@media (min-width:300px) and (max-width:480px){
+    
+      .over{
+        width: 300px;
+        height: 170px;
+
+        }
+      .contain{
+        width: 220px;
+        height: 170px;
+       margin-left: 60px;
+       align-items: 15px;
+      }
+      .centered{
+        text-align: center;
+        font-size: 5px;
+        margin-left: 80px;
+      }
+      
+      .top-left {
+             position: absolute;
+             top: 300px;
+            left: 160px;
+            color: white;
+            font-size: 5px;
+}
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    font-size: 17px;
+  }
+  
+ 
+
+
+
+
+
+
+
+  /*  Counter Section  */
+
+#counter {    
+    background-color: #1d1c19;
+    color: #fff;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 0;
+}
+#counter .count {
+    padding: 50px;
+    background: rgba(138, 116, 116, 0.1);
+    color: #fff;
+    text-align: center;
+}
+.count h4 {
+    color: #fff;
+	font-size: 16px;
+	margin-top: 0;
+}
+#counter .count .fa {
+    font-size: 40px;
+    display: block;
+    color: #fff;
+}
+#counter .number {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+/*  Pricing Section  */
+
+#pricing {
+    background: #f7f7f7;
+}
+.pricing-items {
+    padding-top: 50px;
+}
+.pricing-item {
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 9px 0 rgba(130, 121, 121, .2);
+    padding: 50px 0px;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+}
+.pricing-item.active {
+    top: -50px;
+}
+.price-list li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.price-list .price {
+    font-size: 30px;
+    font-weight: bold;
+}
+.pricing-item .ribbon {
+    margin: -50px 0 20px;
+    display: block;
+    background-color: #f4dba1;
+    padding: 15px 0 2px;
+    opacity: 0.8;
+    border-top-right-radius: 2em;
+}
+.pricing-item:hover .ribbon {
+    background-color: #6d685e;
+	opacity: 1;
+}
+.pricing-item.active .ribbon {
+    background-color: #443e2e;
+	opacity: 1;
+}
+.pricing-item .ribbon p {
+    color: #fff;
+    font-size: 22px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+.pricing-item.active .price-list li, .pricing-item:hover .price-list li {
+    color: #848181;;
+}
+ul.price-list {
+    margin-bottom: 30px;
+    padding: 0;
+}
+.btn-price {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 14px 40px;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -o-border-radius: 26px;
+    border-radius: 26px;
+    border: 1px solid #848181;
+    background-color: transparent;
+    color: #848181;
+}
+.pricing-item:hover .btn-price,
+.active .btn-price {
+    border: 1px solid #afaca2;
+    background-color: #e1d6bb;
+    color: #fff;
+}
+.btn-price:focus {
+    background-color: transparent;
+    text-decoration: none;
+}
+@media only screen and (max-width: 767px) {
+    .pricing-items {
+        padding-top: 0;
+    }
+    .pricing-item.active {
+        top: 20px;
+        margin-bottom: 40px;
+    }
+}
+.ppp{
+  width: 200px;
+  height: 100px;
+}
+#bnb{
+  margin-top: 50px;
+}
+
+
+  .card{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+.card:hover {
+  background-color: #dfa146;
+  color: white;
+}
+</style>
+
+<body>
+ 
+  <nav id="mainnavbar" class="navbar navbar-dark bg-dark navbar-expand-md py-0 fixed-top" style="padding: 5px;">
+  <a href="\index.html" class="navbar-brand"> CAREER FOUNDATION</a>
+  <button class="navbar-toggler" data-toggle="collapse" data-target="#navlinks">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navlink">
+    <ul class="navbar-nav">
+      <li class="nav-items">
+        <a href="home.html" class="nav-link">HOME</a>
+      </li>
+      <li class="nav-items">
+        <a href="about.html" class="nav-link">ABOUT us</a>
+      </li>
+      <li class="nav-items">
+        <a href="plans.html" class="nav-link">PLANS</a>
+      </li>
+     
+    </ul>
+  </div>
+  <a href="\assetsregister.html">
+  <button class="btn btn-primary" type="button">Register now</button> </a>
+  </nav>
+
+
+
+<div class="container" >
+
+    <div class="row " >
+        <div class="col-lg-12 col-md-12 col-12" style="border:5px solid #fff;"  >
+
+         <div class="container" style="background-color: #e7ebf2; " id="bnb"><br>
+            <h1 style="text-align: center; color: darkblue;"> <span>CAREER FOUNDATION </span></h1>
+            <p style="text-decoration: underline; text-align: center;">" Education is the most powerfull weapon  which you can use to change the world"</p>
+            <p style="color: rgb(235, 16, 16); text-align: center;">Base foundatation  course/ 8<sup>th</sup> 9<sup>th</sup> 10<sup>th</sup><br>
+              11<sup>th</sup> 12<sup>th</sup> science. /JEE  NEET  MH-CET</p>
+            <p style="text-align: center;">(12 years journey)</p>
+            <div class="row" style="background-color: rgb(191, 204, 229); padding: 5px;">
+                <h3 style=" text-decoration-color: #d26826;text-align: center;"> Admission open for 12<sup>th </sup>, JEE  2024 & NEET 2024</sup></h3>
+            </div>
+             <div class="row mt-5" style="display: flex;">
+              <h3 style=" text-align: center; color: brown;"><span>Enable better outcomes for everyone </span></h3>
+
+              <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                     <div class="card">
+                            <div class="card-body"><h3>School</h3> <p>Automate operations, boost efficiency and reduce overheads with the most powerful school management platform by your side.</p></div>
+                      </div></div>
+                      <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                     <div class="card">
+                            <div class="card-body"><h3>Teachers</h3> <p>Create an enriching learning environment through world- class learning content along with digital tools that simplify every class operation. </p></div>
+                     </div></div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                         <div class="card-body"><h3>Students</h3> <p>Never miss a lesson with continuous learning at your fingertips through classroom recordings, unlimited practice questions and much more.</p></div>
+                     </div></div>
+                     <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                    <div class="card">
+                           <div class="card-body"><h3>parents</h3> <p>Monitor & track your children’s progress with complete transparency and stay on top of all the school updates with ease.</p> <br></div>
+                    </div></div>
+             </div><br><br>  
+
+            </div>  
+         </div>
+
+          </div>
+        </div>
+</div>
+
+<div class="container mt-5 ">
+  <h3 style="text-align: center;">OUR ACHIEVEMENTS</h3><br>
+</div>
+<div class="container" >
+  <div class="row " style="display: flex;">
+   <div class="col-lg-4 col-md-12 col-12" >            
+  <div class="card w-40" style="height:200px ; margin-right: 10px;">
+    <div class="row">
+      <div class="col-md-6" >
+        <img style="height:180px ;" src="assets\student4.jpg" class="img-fluid">
+      </div>
+      <div class="col-md-6 mt-3">
+        <h5 class="card-title ">ABC  2022</h5>
+        <p>selection  VIT BHOPAL</p>
+        <button class="btn btn-danger">  JEE</button>
+      </div>
+    </div>
+  </div></div>  
+  <div class="col-lg-4 col-md-12 col-12" > 
+  <div class="card w-30" style="height:200px ;margin-right: 10px;">
+    <div class="row">
+      <div class="col-md-6" >
+        <img style="height:180px ;" src="assets\stu.5.jpeg" class="img-fluid">
+      </div>
+      <div class="col-md-6 mt-3">
+        <h5 class="card-title ">ABC  2022</5>
+        <p>Section VIT PUNE  ....</p>
+        <button class="btn btn-danger">  JEE</button>
+      </div>
+    </div>
+  </div></div>
+  <div class="col-lg-4 col-md-12 col-12" > 
+  <div class="card w-30" style="height:200px ; margin-right: 10px;">
+    <div class="row">
+      <div class="col-md-6" >
+        <img style="height:180px ; " src="assets\stu.7.avif" class="img-fluid">
+      </div>
+      <div class="col-md-6 mt-3">
+        <h5 class="card-title ">ABC  2021</h5>
+        <p>our tribe to classice American test</p>
+        <button class="btn btn-danger">  NEET</button>
+      </div>
+    </div>
+  </div></div>
+
+  </div>
+ 
+
+
+  <div class="row " style="display: flex;">
+    <div class="col-lg-4 col-md-12 col-12" >            
+   <div class="card w-30" style="height:200px ; margin-right: 10px;">
+     <div class="row">
+       <div class="col-md-6" >
+         <img style="height:180px ; " src="assets\stu.8.jpg" class="img-fluid">
+       </div>
+       <div class="col-md-6 mt-3">
+         <h5 class="card-title ">ABC  2020</h5>
+         <p> Selection GMC GULBARG</p>
+         <button class="btn btn-danger"> NEET</button>
+       </div>
+     </div>
+   </div></div> <br> 
+   <div class="col-lg-4 col-md-12 col-12" > 
+   <div class="card w-30" style="height:200px ;margin-right: 10px;">
+     <div class="row">
+       <div class="col-md-6" >
+         <img style="height:180px ; " src="assets\stu.2.avif" class="img-fluid">
+       </div>
+       <div class="col-md-6 mt-3">
+         <h5 class="card-title ">ABC 2018</5>
+         <p>Selection at G.M.C. CHINDWARA</p>
+         <button class="btn btn-danger">  NEET</button>
+       </div>
+     </div>
+   </div></div>
+   <div class="col-lg-4 col-md-12 col-12" > 
+   <div class="card w-30" style="height:200px ; margin-right: 10px;">
+     <div class="row">
+       <div class="col-md-6" >
+         <img style="height:180px ; " src="assets\stu.9.jpg" class="img-fluid">
+       </div>
+       <div class="col-md-6 mt-3">
+         <h5 class="card-title ">ABC 2016</h5>
+         <p>Qualified JEE  advanced</p>
+         <button class="btn btn-danger">  2020</button>
+       </div>
+     </div>
+   </div></div>
+ </div>
+</div><br><br>
+
+
+
+<div class="container mt-10" style="background-color:#e7eaec"><br><br>
+  <h1 style="text-align: center;">INFORMATION</h1><br>
+  <P>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</P>
+  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+
+</div>
+
+
+<section id="counter" class="sec-padding">
+		<div class="container mt-5 mb-5">
+			<div class="row">
+				<div class="col-md-3 col-12 ">
+         
+					<div class="count"> <span class="fa fa-smile-o"></span>
+						<p class="number">126</p>
+						<h4>Happy students</h4> </div>
+				</div>
+				<div class="col-md-3 col-12 ">
+					<div class="count"> <span class="fa fa-smile-o"></span>
+						<p class="number">535</p>
+						<h4>Awards</h4> </div>
+				</div>
+				<div class="col-md-3 col-12">
+					<div class="count"> <span class="fa fa-smile-o"></span>
+						<p class="number">896</p>
+						<h4>Total Hours</h4> </div>
+				</div>
+				<div class="col-md-3 col-12 ">
+					<div class="count"> <span class="fa fa-smile-o"></span>
+						<p class="number">777</p>
+						<h4>Projects Complete</h4> </div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--comments code -->
+<div class="container mt-3">
+  <h2>Ouestion/Comments</h2>
+  
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+  
+  
+
+<!--Footer code -->
+<footer class="bg-dark text-white pt-15 pb-4" >
+  <div class="containter text-left text-md-left" style="margin-top: 15px;">
+    <div class="row text-left text-md-left"  >
+      <div class="row"  style="padding-left: 110px; margin-top: 50px;">
+    <div class="col-lg-3 col-md-6 col-12">
+          <h5 style="font-size: 20px; color:#9ac4eb"> QUICK LINKS</h5>
+          <p style=" margin-top: 25px;"> <a href="#" class="text-white" style="text-decoration: none;">
+            — PROGRAMS</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— SUCCESS TRAIL</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;"></a>— VISION & MISSION</p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— CENTRES </a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— HOSTELS</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;"> — ADMISSION</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— RESIDENTIAL FACILITIES</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— ONLINE RESULT</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— UNSUBSCRIBE</a></p>
+       
+    </div>
+    
+    <div class="col-lg-3 col-md-6 col-12">
+          <h5 style="font-size: 20px; color:#9ac4eb">EXAMS</h5>
+          <p style=" margin-top: 25px;"> <a href="#" class="text-white" style="text-decoration: none; margin-top: 15px;">— BIGBANG EDGE TEST</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— TALENT RECOGNITION EXAM</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">—TALENT SUPPORT EXAM</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— IIT GENIUS </a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— FORTUNATE 40</a></p>
+        <p> <a href="#" class="text-white" style="text-decoration: none;">— ADMISSION TEST</a></p>
+    </div>
+    <div class="col-lg-3 col-md-6 col-12">
+          <h5 style="font-size: 20px; color:#9ac4eb;">ABOUT</h5>
+          <p style=" margin-top: 25px;"> <a href="#" class="text-white" style="text-decoration: none; margin-top: 15px;">progress card </a></p>
+          <p> <a href="#" class="text-white" style="text-decoration: none;"> Balance Enquiry </a></p>
+          <p> <a href="#" class="text-white" style="text-decoration: none;">  FAQ </a></p>
+          <p> <a href="#" class="text-white" style="text-decoration: none;"> PTM </a></p>
+          <p> <a href="#" class="text-white" style="text-decoration: none;"></a></p>
+        
+    </div>
+   
+   <div class="col-2 text-center align-items-center">
+          <h5 style="text-align: center; font-size: 25px; color:#9ac4eb;">SOCIAL MEDIA</h5>
+          <a href="#" class="fa fa-facebook" style="margin-top: 15px;" style=" margin-top: 25px;"></a>
+           <a href="#" class="fa fa-twitter"></a>
+           <a href="#" class="fa fa-instagram"></a>
+           <a href="#" class="fa fa-youtube"></a><br>
+           <img style="padding: 15px;" src="D:\Domino\hello_dominos_20210615.png">
+   </div>
+ </div>
+    </div>
+  </div>
+  <div class="container">
+    <p style="text-align: center;">All Rights Reserved. Copyright © Jubilant FoodWorks Ltd.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
